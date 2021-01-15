@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TicTacToe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <style>
+        canvas {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+
+        #out {
+            width: 100%;
+            text-align: center;
+        }
+
+        #in {
+            display: none;
+            cursor:pointer;
+            font-size: 2em;
+            border:1px solid black;
+            border-radius: 1rem;
+            padding:0.2em;
+        }
+
+        p {
+            font-size: 3em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas onclick="pressed()"></canvas>
+    <p></p>
+    <div id='out'>
+        <div id='in' onclick='init();'>Retry</div>
+    </div>
+    <script src='JS/index.js'></script>
+    <script src='JS/minimax.js'></script>
+</body>
+
+</html>
